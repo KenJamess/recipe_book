@@ -48,16 +48,14 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-10">
-            <button
-              type="submit"
-              class="btn btn-success"
-              [disabled]="!recipeForm.valid"><i class="fa fa-save"></i> Save
-            </button>
-            <button type="button" class="btn btn-danger" (click)="onCancel()"><i class="fa fa-window-close"></i> Cancel
-            </button>
-          </div>
+        <div class="row justify-content-center">
+          <button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!recipeForm.valid"><i class="fa fa-save"></i> Save
+          </button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()"><i class="fa fa-window-close"></i> Cancel
+          </button>
         </div>
       </form>
     </div>
