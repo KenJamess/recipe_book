@@ -1,0 +1,16 @@
+.heading-text {
+  color: #CC33CC;
+}
+
+.description-text {
+  color: #422513;
+}
+
+.item-image {
+  height: 100%;
+}
+
+.list-group-item.active {
+  background-color: #00CCFF;
+  border-color: #00CCFF;
+}

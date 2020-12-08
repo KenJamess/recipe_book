@@ -1,0 +1,26 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item">
+  <div class="row">
+  <div class="col">
+    <div class="row">
+      <h5 class="list-group-item-heading heading-text">{{ recipe.name }}</h5>
+    </div>
+    <div class="row">
+      <p class="list-group-item-description description-text">{{ recipe.description }}</p>
+    </div>
+  </div>
+  <div class="col col-lg-2">
+      <span class="item-image">
+        <img
+          [src]="recipe.imageURL"
+          alt="{{ recipe.name }}"
+          class="rounded float-right"
+          style="max-height: 50px;">
+      </span>
+  </div>
+  </div>
+
+</a>

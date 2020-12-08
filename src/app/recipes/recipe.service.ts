@@ -1,5 +1,5 @@
 import {EventEmitter, Injectable} from '@angular/core';
-import {Recipe} from "./recipe.model";
+import {Recipe} from './recipe.model';
 
 @Injectable({
   providedIn: 'root'
@@ -18,10 +18,23 @@ export class RecipeService {
   }
 
   getRecipes() {
-    return this.recipes.slice();
+    return this.recipes;
   }
 
   getRecipe(index: number) {
     return this.recipes[index];
+  }
+
+  deleteRecipe(index: number) {
+      this.recipes.splice(index, 1);
+      console.log(this.recipes);
+  }
+
+  updateRecipe(index: number, recipe: Recipe) {
+    this.recipes[index] = recipe;
+  }
+
+  addRecipe(recipe: Recipe){
+    this.recipes.push(recipe);
   }
 }

@@ -1,11 +1,12 @@
 <div class="row">
   <div>
-    <a href="#" class="btn btn-success"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+    <button class="btn btn-outline-success my-sm-0" (click)="onCreateRecipe()"><i class="fa fa-plus-square"></i>
+    </button>
   </div>
 </div>
 <hr>
-<div class="row">
+<div class="row flex-column">
   <app-recipe-item *ngFor="let recipe of recipes; let i = index"
-                   [index] = i
-                   [recipe] = recipe></app-recipe-item>
+                   [index]=i
+                   [recipe]=recipe></app-recipe-item>
 </div>
