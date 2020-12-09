@@ -30,7 +30,7 @@ export class RecipeEditComponent implements OnInit {
     let recipeName = '';
     let recipeDescription = '';
     let imageUrl = '';
-    /*retrive data from Recipe for edit mode*/
+    /*retrieve data from Recipe for edit mode*/
     if (this.editMode) {
       const recipe = this.recipeService.getRecipe(this.id);
       recipeName = recipe.name;
