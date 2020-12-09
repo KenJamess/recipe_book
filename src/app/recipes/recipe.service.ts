@@ -6,8 +6,6 @@ import {Recipe} from './recipe.model';
 })
 export class RecipeService {
 
-  /*selectedRecipe = new EventEmitter<Recipe>();*/
-
   recipes: Recipe[] = [
     new Recipe(1, 'Vietnamese Food', 'Must Try!', 'https://iloveasiatour.com/wp-content/uploads/2019/01/Vietnamese-daily-meal1.jpg'),
     new Recipe(2, 'Chinese Food', 'Delicious', 'https://www.englishclub.com/images/vocabulary/food/chinese/chinese-food.jpg'),
